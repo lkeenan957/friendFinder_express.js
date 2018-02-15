@@ -1,0 +1,166 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- Use the latest rendering edge -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- set the page to fit the device size and the zoom level to 1 -->
+    <meta name="viewport" content="width = device-width, initial-scale =1">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <title>Finding a Friend </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=BioRhyme+Expanded|Nanum+Pen+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fresca" rel="stylesheet">
+
+
+  <body>
+    <div class ="container">
+      <div class="page-header">
+        <h1 class="header" id="header">Survery Q's:</h1>
+      </div>
+    </div>
+
+    <div class ="container">
+      <div class="jumbotron">
+        <div class="surveyBox">
+        <form>
+          <label for="fname">Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="">
+          <br>
+          <label for="lname">Link to Photo Image:</label>
+          <input type="text" id="image" name="image" placeholder="">
+          <br>
+
+          <label for="question1"><big>Question 1:</big> Your mind is always buzzing with unexplored ideas and plans.</label><br>
+          <select id="question1" name="clicked">
+            <option value="" selected="selected">-</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+
+        <label for="question2"><big>Question 2: </big>You rely more on your experience than your imagination.</label><br>
+          <select id="question2" name="clicked">
+            <option value="" selected="selected">-</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+
+        <label for="question3"><big> Question 3:</big> You can stay relaxed and focused even when there is some pressure.</label><br>
+          <select id="question3" name="clicked">
+            <option value="" selected="selected">-</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+
+        <label for="question4"><big>Question 4:</big> You rarely do something just out of sheer curiosity.</label><br>
+          <select id="question4" name="clicked">
+            <option value="" selected="selected">-</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+          <br>
+
+        <label for="question5"><big>Question 5:</big> People can rarely upset you.</label><br>
+          <select id="question5" name="clicked">
+            <option value="" selected="selected">-</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+
+        <label for="question6"><big>Question 6:</big> It is often difficult for you to relate to other people’s feelings.</label><br>
+          <select id="question6" name="clicked">
+            <option value="" selected="selected">-</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+
+        <label for="question7"><big>Question 7:</big> In a discussion, truth should be more important than people’s sensitivities.</label><br>
+          <select id="question7" name="clicked">
+            <option value="placeholder" selected="selected">-</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+
+        <label for="question8"><big>Question 8:</big> You rarely get carried away by fantasies and ideas.</label><br>
+          <select id="question8" name="clicked">
+            <option value="" selected="selected">-</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+
+        <label for="question9"><big>Question 9:</big> You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</label><br>
+          <select id="question9" name="clicked">
+            <option value="" selected="selected">-</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+
+        <label for="question10"><big>Question 10:</big> You feel more energetic after spending time with a group of people.</label><br>
+          <select id="question10" name="clicked">
+            <option value="" selected="selected">-</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        <br>
+        <button type="submit" id="submit" class="btn btn-lrg">Submit</button>
+
+
+        </form>
+      </div>
+    </div>
+    </div>
+
+    <!-- The Modal -->
+<div id="resultModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 class="modal-title"><strong>Your Friend: </strong></h2>
+    </div>
+    <div class="modal-body">
+      <h2 id="matchName"></h2>
+      <img id="matchImage" src ="" alt="" height="50" width="50">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" id="closeModal" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+
+</div>
+
+    <script src="js/survey.js"></script>
+  </body>
+</html>

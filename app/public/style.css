@@ -1,0 +1,70 @@
+body, html {
+        background: url("people.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: 'Fresca', sans-serif;
+        font-size: 18px;
+    }
+.container{
+  position: relative;
+}
+
+.page-header{
+  border-bottom: 10px solid black;
+  height: 100px;
+  width: 800px;
+  position: absolute;
+  top:140px;
+  left:120px;
+  right: 100px;
+  z-index: 1;
+  color: #FF5722;
+  background-color: white;
+  font-family: 'BioRhyme Expanded', serif;
+  /*margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 150px;*/
+  padding-left:150px;
+  padding-top: 15px;
+}
+
+.jumbotron {
+        text-align: center;
+        position: absolute;
+        top: 180px;
+        left:220px;
+        /*margin-top: 300px;
+        margin-left: 200px;*/
+        background:  #24248f !important;
+        /*height:300px;*/
+        width:600px;
+        color: white;
+
+    }
+.surveyBox{
+  height:1000px;
+}
+#heading2{
+  color: #FF6F00;
+}
+.btn {
+        background-color: #FF6F00 !important;
+        color: #24248f;
+        margin-top: 10px;
+    }
+
+.modal {
+    /*display: none; */
+    width: 100px;
+    height: 100px;
+    background-color: #24248f;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
