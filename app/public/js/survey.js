@@ -2,15 +2,6 @@ console.log("yo");
 $("#submit").on("click", function(event){
   event.preventDefault();
 
-  // function validate()
-  // {
-  //   if(document.form.clicked=="")
-  //   {
-  //   alert ( "Please select all the fields!");
-  //   return false;
-  //   }
-  //   else
-  //   {
       var newPerson = {
         name: $("#fname").val().trim(),
         image: $("#image").val().trim(),
@@ -34,8 +25,10 @@ $("#submit").on("click", function(event){
         data: newPerson
       }).then(function(goodFit){
         console.log(goodFit, "this is our server response")
-          $("#matchName").text(goodFit);
-            
+          // $("#userMatch").text(goodFit);
+          // Pop open the modal dialog
+
+          // Pop open the modal dialog
       })
 
     // }

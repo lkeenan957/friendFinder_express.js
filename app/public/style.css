@@ -54,17 +54,3 @@ body, html {
         color: #24248f;
         margin-top: 10px;
     }
-
-.modal {
-    /*display: none; */
-    width: 100px;
-    height: 100px;
-    background-color: #24248f;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
