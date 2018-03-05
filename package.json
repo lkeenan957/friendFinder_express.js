@@ -1,0 +1,24 @@
+{
+  "name": "friendfinder_express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lkeenan957/friendFinder_express.js.git"
+  },
+  "author": "Lydia Keenan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lkeenan957/friendFinder_express.js/issues"
+  },
+  "homepage": "https://github.com/lkeenan957/friendFinder_express.js#readme"
+}
