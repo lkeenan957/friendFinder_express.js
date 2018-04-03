@@ -31,21 +31,25 @@ module.exports = function(app){
         var deduction = friends[i].scores[j] - newFriend.scores[j];
         difference += deduction
       }
-      differenceArray.push([friends[i]['name'], difference])
+      differenceArray.push([friends[i]['name'], difference, friends[i]['photo']])
     };
 
     var leastAmount = differenceArray[0][1];
     var goodFit = differenceArray[0][0];
+    var goodFitImage = differenceArray[0][2];
     for(var i=1; i<differenceArray.length; i++){
       if(differenceArray[i][1] < leastAmount) {
         leastAmount = differenceArray[i][1];
         goodFit = differenceArray[i][0];
+        goodFitImage = differenceArray[i][2];
       }
     }
 
-    console.log("Your match is " + goodFit);
+    console.log("Your match is " + goodFit + goodFitImage);
 
-    res.send(goodFit);
+    // res.send(goodFit, goodFitImage);
+    // res.send(goodFitImage);
+    res.json({ goodFitImage: goodFitImage, goodFit: goodFit});
 
   });
 

@@ -23,8 +23,14 @@ $("#submit").on("click", function(event){
         method: "POST",
         url: '/api/friends',
         data: newPerson
-      }).then(function(goodFit){
-        console.log(goodFit, "this is our server response")
+      }).then(function(data){
+        console.log(data, "this is our server response")
+        $("#cor").text("Your good match is : " + data.goodFit);
+        $("#match-img").attr("src" + data.goodFitImage);
+        $("#wro").append(data.goodFit + ": " + "<a href='data.goodFitImage'></a>");
+
+
+
           // $("#userMatch").text(goodFit);
           // Pop open the modal dialog
 
@@ -37,3 +43,7 @@ $("#submit").on("click", function(event){
 
 
   });
+
+  $("#restart").on("click", function(){
+    window.location.reload();
+  })
